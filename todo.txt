@@ -1,0 +1,22 @@
+-------------
+Global
+-------------
+		-Footer
+-------------
+index.html
+-------------
+		- Sort latest list by release date
+n/a	- Top 10 div
+--------------------------
+somemanga.html
+--------------------------
+3		-Disable highlight and cursor on ...
+		-Manga recommendation in footer
+--------------------------
+register.html
+--------------------------
+--------------------------
+extra
+--------------------------
+		-fix getNextMangaPage() to work on additional manga automaticly
+4		-responsive

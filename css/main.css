@@ -1,0 +1,587 @@
+@charset "UTF-8";
+/*----------------------------------Global----------------------------------*/
+div, body, p, a, ul, li, img{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image:url('../images/bg.png');
+	background-repeat: repeat;
+    background-attachment: fixed;
+}
+.button{
+	margin:10px;
+	padding:5px;
+	outline: none;
+}
+/*
+.button{
+	border: 2px solid black;
+	font-size:30px;
+	margin:10px;
+	padding:5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	outline: none;
+	cursor:pointer;
+}
+.btn_vert{
+	background-color:green;
+	color:#00FFCC;
+}*/
+h1{
+	text-align:center;
+	z-index:100;
+}
+/*----------------------------------Header--------------------------------*/
+#header{
+	height:60px;
+	width:100%;
+	background-color:#134F00;
+	border: 2px solid black;
+	position:fixed;
+	z-index:100;
+}
+#logo{
+	float:left;
+	margin:5px;
+}
+#headerTitle{
+	text-align:left;
+	font-size:30px;
+	display: inline-block;
+	margin:10px;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+#div_login_register{
+	position:absolute;
+	top:0;
+	right:0;
+}
+#div_login_register input{
+	margin:3px 0 0 20px;
+}
+.ui-widget{
+	position:absolute;
+	top:14px;
+	right:154px;
+}
+#btn_login_register{}
+#hidden_login{
+	position:fixed;
+	top:60px;
+	right:20px;
+}
+#hidden_login{
+	z-index:200;
+}
+#login_form{
+	background-color:white;
+	padding:5px;
+	border:2px solid blue;
+	display:none;
+}
+#login_form label{
+	display:inline-block;
+	width:100px;
+}
+#login_form input[type='text'],#login_form input[type='password']{
+	display:inline-block;
+	width:100px;
+	margin-bottom:3px;
+}
+#login_form input[type='submit'] {}
+#login_form a {
+	margin-right:70px;
+	display:inline-block;
+}
+#div_login_temp p{
+	color:#0099CC;
+	font-weight:bold;
+	margin-right:5px;
+}
+/*----------------------------------Footer----------------------------------*/
+#footer{
+	background-color:gray;
+	text-align:center;
+}
+/*----------------------------------Index.html----------------------------------*/
+#main_div{
+	padding-top:60px;
+	max-width:960px;
+	background-color:#DDD;
+	margin: 0 auto;
+	overflow:auto;
+}
+/*----------------------------------Main P1 Manga List ---*/
+#main_div_p1{}
+#main_div_p1_1{
+	background-color:#29A329;
+}
+#main_div_p1_2{
+	opacity:0.8;
+	padding:10px;
+	margin:auto;
+	min-width:360px;
+	position:relative;
+}
+#progress_bar{
+	position:absolute;
+	width:100px;
+	height:100px;
+	background-color:green;
+	top:230px;
+	left:20%;
+	z-index:100;
+}
+.m1{
+	height:250px;
+	width:140px;
+	margin: 8px;
+	display:inline-block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.m1_img{
+	height:160px;
+	width:90%;
+	background-color:#FFF;
+	border: 1px solid black;
+	margin:5px auto 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.thumb{
+	height:100%;
+	width:100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.m1_t{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+.m1_d{
+	text-align:center;
+	font-size:16px;
+	margin:5px 0;
+}
+.m1_c{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+/*----------------------------------Main P2 Manga List ---*/
+/*--------------- Buttons*/
+#btn_collapse{
+	float:right;
+}
+#main_div_p2{
+	background-color:#29A329;
+	overflow:auto;
+}
+.main_div_p2_b1{
+	float:left;
+}
+#main_div_p2_b2{
+	float:right;
+}
+#sorts{
+	margin-left:10px;
+}
+/*--------------- Main*/
+#div_p2_1{
+	position:relative;
+}
+#main_div_p2_2{
+}
+/*#div_image{}*/
+#div_image img{
+	position:absolute;
+	right:0;
+	top:0;
+}
+/*Idotope divs*/
+.m2{
+	height:42px;
+	width:500px;
+	margin: 8px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/*background:yellow;*/
+	background: linear-gradient(to bottom, rgba(168,163,161,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); 
+	z-index:1;
+	/*padding-bottom:50px;*/
+}
+.m2_img{
+	height:100%;
+	width:15px;
+	padding-top:5px;
+	float:left;
+	margin: 0 5px;
+	/*background:black;*/
+}
+.m2_1{
+	height:100%;
+	/*background:purple;*/
+	max-width:300px;
+	float:left;
+}
+.m2_2{
+	height:100%;
+	margin-right:5px;
+	/*background-color:orange;*/
+	float:right;
+	/*overflow:auto;*/
+}
+.m2_t{
+	font-size:18px;
+	font-weight:bold;
+}
+.m2_link{
+	text-decoration:none;
+	color:blue;
+}
+.m2_c{
+	font-size:18px;
+	font-weight:bold;
+	/*background-color:blue;*/
+}
+.m2_d{
+	font-size:16px;
+	margin-top:15px;
+}
+
+/*----------------------------------Isotop Start------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- isotope ---- */
+
+.isotope {
+  border: 1px solid #333;
+  max-width: 1200px;
+}
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*
+------------------------------------------manga/somemanga.html
+*/
+#main_manga_div{
+	max-width:960px;
+	margin: 0 auto;
+	overflow:auto;
+}
+#main_manga_div h1{
+	margin:0;
+	margin-top:20px;
+}
+#top_manga_div{
+	max-width:960px;
+	background-color:green;
+	border:2px solid black;
+	-webkit-border-bottom-right-radius: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-moz-border-radius-bottomright: 50px;
+	-moz-border-radius-bottomleft: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	margin-top:60px;
+}
+#bottom_manga_div{
+	max-width:960px;
+	background-color:green;
+	border:2px solid black;
+	-webkit-border-top-left-radius: 50px;
+	-webkit-border-top-right-radius: 50px;
+	-moz-border-radius-topleft: 50px;
+	-moz-border-radius-topright: 50px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	overflow:auto;
+}
+#bg{
+	background-image:url('../images/bg.png');
+	background-repeat: repeat;
+    background-attachment: fixed
+}
+#manga_body_div{
+	background-color:red;
+	max-width:960px;
+	margin:auto;
+}
+#manga_div{
+	margin:auto;
+	text-align:center;
+	overflow:auto;
+}
+#manga_img{
+	max-width:100%;
+	max-height:100%;
+	cursor:pointer;
+	display:block;
+	margin:auto;
+}
+#div_manga_img{}
+#div_p_div_manga_img{}
+#chapter_select{
+	float:left;
+	margin-left:40px;
+	height:25px;
+	margin-top:20px;
+	background-color:#DDD;
+}
+.chapter_ul{
+	list-style:none;
+	margin:10px 0;
+	float:left;
+}
+.chapter_ul li{
+	width:75px;
+	display:inline-block;
+	border:1px solid black;
+	background:white;
+	padding-top:10px;
+	transition: .25s ease-out;
+	outline:none;
+	cursor:pointer;
+	height:40px;
+	background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+}
+.chapter_ul li:first-child{
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.chapter_ul li:last-child{
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.chapter_ul li:hover{
+	background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+	transition:300;
+	transition: .25s ease-out;
+}
+.ch_selected{
+	background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%)!important;
+}
+#btn_left li{
+	margin-left:50px;
+}
+.btn_mid li{
+	width:40px;
+}
+.btn_right img{
+	margin-top:0;
+}
+.btn_right {
+	position:relative;
+}
+#btn_right img{
+	position:absolute;
+	top:5px;
+	right:20px;
+}
+.btn_left {
+	position:relative;
+}
+.btn_left img{
+	position:absolute;
+	top:5px;
+	right:22px;
+}
+.btn_mid{
+	margin-left:50px;
+	margin-right:50px;
+}
+#l_btn_left{
+	margin-left:150px;
+}
+#div_top_navigation{
+	overflow:auto;
+}
+#div_zoom{
+	
+}
+#zoom_btn{
+	cursor:pointer;
+}
+#m_btn_back{
+	display:none;
+}
+/*
+------------------------------------------manga/register.html
+*/
+#login_div{
+	z-index:10;
+	position:relative;
+	height:720px;
+	padding-top:185px;
+}
+#register_form{
+	max-width:500px;
+	margin:auto;
+}
+#login_div h1{
+	margin:auto;
+	text-align:center;
+}
+#register_form label{
+	width:100px;
+	display:inline-block;
+	margin:10px;
+}
+#register_form span{
+	color:red;
+	margin-left:5px;
+}
+#register_form input{
+	
+}
+#r_img_left{
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:-1;
+	opacity:0.3;
+}
+#r_img_right{
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:-1;
+	opacity:0.3;
+}
+/*
+---------------------------Media
+*/
+@media (max-width: 750px) {
+	.ui-widget, #div_login_register,#headerTitle,#logo{
+		display:block;
+		float:none;
+	}
+	#main_div{
+		padding:0;
+	}
+	.m2{
+		max-width:350px;
+	}
+	.m2_2{
+		position:absolute;
+		right:0;
+		bottom:-6px;
+	}
+	#div_p2_1{
+		max-width:100%;
+	}
+	#headerTitle{
+		display:block;
+	}
+	#logo{
+		display:block;
+	}
+	#header{
+		position:static;
+		height:210px;
+	}
+	.ui-widget, #div_login_register{
+		position:static;
+	}
+	.ui-widget{
+		margin-left:10px;
+	}
+	#manga_div ul,#zoom_btn{
+		display:none;
+	}
+	#m_btn_back{
+		display:inline-block;
+	}
+}
+@media (max-width: 600px) {
+	#r_img_right{
+	display:none;
+	}
+}
+
+

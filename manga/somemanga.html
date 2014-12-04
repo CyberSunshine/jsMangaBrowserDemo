@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Travail Pratique</title>
+		<script src="../js/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../js/isotope/isotope.pkgd.min.js"></script> 
+		<script src="../js/main.js"></script>
+		<script src="../js/somemanga.js"></script>
+		<script src="../third/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="../third/jquery-ui-1.11.2.custom/jquery-ui.min.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/mangalist.js"></script>
+		<link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+	</head>
+	<body>
+<!-- ================================== Header Debut ======================== -->
+		<div id='header'>
+			<a href="../index.html"><img src='../images/logo.png' alt='' id='logo' /></a>
+			<a id="headerTitle" href="../index.html">Manga Supreme</a>
+			<div id='div_login_register'><button id='btn_login_register' class='button account'>Login/Register</button></div>
+			<div class="ui-widget"><input id="tags" placeholder='Search Manga'></div>
+		</div>
+		<div id='hidden_login'>
+			<form id="login_form" method="post" accept-charset="utf-8">
+				<p><label for="id_user">Username:</label> <input id="id_user" type="text" placeholder="Username" name="user" maxlength="20" /><span></span></p>
+				<p><label for="id_password">Password:</label> <input type="password" placeholder="Password" name="password" id="id_password" /><span></span></p>
+				<p><a href='../register.html'>Register</a><input type="submit" value="Login" /></p>
+				
+			</form>
+		</div>
+		<div class="header_no_overlap"></div>
+<!-- =================================== Header Fin ========================= -->
+
+<!-- ===================================== Body =========================== -->
+<div id='bg'>
+	<div id='main_manga_div'>
+		<div id='manga_div'>
+			<div id='top_manga_div'>
+				<h1>Shinozaki-san Ki o Ota Shika ni! ch:<span id='cur_chapter'>1</span></h1>
+				<div id='div_top_navigation'>
+					<select id='chapter_select'>
+						<option>Vol: 01 Ch:001</option>
+						<option>Vol: 02 Ch:002</option>
+						<option>Vol: 03 Ch:003</option>
+						<option>Vol: 04 Ch:004</option>
+					</select>
+					<button id='m_btn_back' class='button'>Back</button>
+					<ul id='btn_left' class='chapter_ul pre_chapter btn_left'><li><img src='../images/rw.png' /></li></ul>
+					<ul id='btn_mid' class='btn_mid chapter_ul'>	</ul>
+					<ul id='btn_right' class='chapter_ul next_chapter btn_left'><li><img src='../images/ff.png' /></li></ul>
+				</div>
+				<div id='div_zoom'>
+					<img id='zoom_btn' src='../images/zoom.png'>
+				</div>
+			</div>
+			<div id='div_p_div_manga_img'>
+				<div id='div_manga_img'>
+					<img id='manga_img' src='../m/shinozaki/1/001.jpg' />
+				</div>
+			</div>
+			<div id='bottom_manga_div'>
+				<ul id='l_btn_left' class='chapter_ul pre_chapter btn_left'><li><img src='../images/rw.png' /></li></ul>
+				<ul  class='btn_mid chapter_ul'></ul>
+				<ul id='l_btn_right' class='chapter_ul next_chapter btn_left'><li><img src='../images/ff.png' /></li></ul>
+			</div>
+		</div>
+<!-- ====================================== Body  Fin=========================== -->
+<!-- ====================================== Footer  Start=========================== -->
+		<div id='footer'>
+			<p>Copiright &copy; Manga Supreme</p>
+		</div>
+<!-- ====================================== Footer End =========================== -->
+	</div>
+	</div>
+	</body>
+</html>
