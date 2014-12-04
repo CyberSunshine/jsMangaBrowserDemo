@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Travail Pratique</title>
+		<script src="js/jquery/jquery-1.11.1.min.js"></script>
+		<script src="js/isotope/isotope.pkgd.min.js"></script> 
+		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+		<script src="third/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="third/jquery-ui-1.11.2.custom/jquery-ui.min.css" />
+		<script src="js/mangalist.js"></script>
+		<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+	</head>
+	<body>
+<!-- ================================== Header Debut ======================== -->
+		<div id='header'>
+			<a href="index.html"><img src='images/logo.png' alt='' id='logo' /></a>
+			<a id="headerTitle" href="index.html">Manga Supreme</a>
+			<div id='div_login_register'><button id='btn_login_register' class='button account'>Login/Register</button></div>
+			<div class="ui-widget"><input id="tags" placeholder='Search Manga'></div>
+		</div>
+		<div id='hidden_login'>
+			<form id="login_form" method="post" accept-charset="utf-8">
+				<p><label for="id_user">Username:</label> <input id="id_user" type="text" placeholder="Username" name="user" maxlength="20" /><span></span></p>
+				<p><label for="id_password">Password:</label> <input type="password" placeholder="Password" name="password" id="id_password" /><span></span></p>
+				<p><a href='register.html'>Register</a><input type="submit" value="Login" /></p>
+				
+			</form>
+		</div>
+<!-- =================================== Header Fin ======================== -->
+		
+<!-- ===================================== Body =========================== -->
+<!-- =============================Part 1-->
+		<div id='main_div'>
+			<div id='main_div_p1'>
+				<div id='main_div_p1_1'>
+					<button id='btn_latest' class='button btn_vert'>Recent Updates</button>
+					<button id='btn_random' class='button btn_vert'>Random</button>
+				</div>	
+				<div id='main_div_p1_2'>
+					<!--  6 x 2 mangas -->
+				</div>
+			</div>	
+<!-- =============================Part 2-->
+			<div id='main_div_p2'>
+				<div id="sorts" class="button-group main_div_p2_b1">
+					<button class="button is-checked" data-sort-value="original-order">Most Popular</button>
+					<button class="button" id ='btn_az' data-sort-value="name">A-Z</button>
+					<button class="button" id ='btn_vol' data-sort-value="volume">Volume</button>
+					<button class="button" id ='btn_year' data-sort-value="year">Realease date</button>
+				</div>
+				<div id='main_div_p2_b2'>
+					<button id='btn_collapse' class='button btn_vert'>__</button>
+				</div>
+			</div>
+			<div id='div_p2_1'>
+				<div id='main_div_p2_2'></div>
+				<div id='div_image'><img src='images/knight.png' /></div>
+			</div>
+<!-- ====================================== Body  Fin=========================== -->
+<!-- ====================================== Footer  Start=========================== -->
+		<div id='footer'>
+			<p>Copiright &copy; Manga Supreme</p>
+		</div>
+<!-- ====================================== Footer End =========================== -->
+	</div>
+	</body>
+</html>
