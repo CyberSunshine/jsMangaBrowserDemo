@@ -536,6 +536,11 @@ body {
 /*
 ---------------------------Media
 */
+@media (max-width: 930px) {
+	.next_chapter,.pre_chapter{
+		display:none;
+	}
+}
 @media (max-width: 750px) {
 	.ui-widget, #div_login_register,#headerTitle,#logo{
 		display:block;
@@ -570,6 +575,9 @@ body {
 	}
 	.ui-widget{
 		margin-left:10px;
+	}
+	#top_manga_div{
+		margin:0;
 	}
 	#manga_div ul,#zoom_btn{
 		display:none;
