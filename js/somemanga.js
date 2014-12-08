@@ -253,8 +253,8 @@ function toggleImgZoom(){
 		$("#div_manga_img").css('position','static');
 		$("#div_p_div_manga_img").height('auto');
 		$("#div_manga_img").width('auto');
-		$("#manga_img").css('max-height','auto');
-		$("#manga_img").css('max-width','auto');
+		$("#manga_img").css('max-height','100%');
+		$("#manga_img").css('max-width','100%');
 
 		
 	} else {
